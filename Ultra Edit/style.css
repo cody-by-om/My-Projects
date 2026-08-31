@@ -1,0 +1,456 @@
+/* .logo {} */
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #ffffff 0%, #f6f7fb 100%);
+    animation: bodyGlow 4s ease-in-out infinite alternate;
+}
+
+.logo img {
+    width: 164px;
+    animation: logoFloat 2.8s ease-in-out infinite;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Segoe UI";
+    animation: slideDown 1s ease-out;
+}
+
+.right ul {
+    display: flex;
+    gap: 34px;
+}
+
+.right ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right ul li span {
+    padding: 0 5px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    margin: 70px;
+    font-family: sans-serif;
+    animation: fadeInUp 1.1s cubic-bezier(0.22, 1, 0.36, 1) both;
+    transition: transform 0.4s ease;
+}
+
+.first:hover {
+    transform: scale(1.01);
+}
+.first span {
+    font-size: 40px;
+    animation: textPop 1.5s ease-out;
+}
+
+section span img {
+    width: 82px;
+    margin: 0 23px;
+    animation: rotateIcon 2.5s ease-in-out infinite;
+}
+
+.first p {
+    font-size: 23px;
+    width: 44vw;
+    text-align: center;
+    animation: fadeIn 1.5s ease-out;
+}
+
+
+
+.status-box {
+    max-width: 500px;
+    margin: 20px auto 0;
+    text-align: center;
+    padding: 12px 18px;
+    border-radius: 10px;
+    background: #eaf7ff;
+    color: #0d3b66;
+    font-weight: 600;
+    box-shadow: 0 6px 18px rgba(13, 59, 102, 0.08);
+    transition: all 0.3s ease;
+}
+
+.status-box.success {
+    background: #e8f9ee;
+    color: #1f7a45;
+}
+
+.status-box.warn {
+    background: #fff2dc;
+    color: #a65c00;
+}
+
+.btn {
+    display: inline-block;
+    background: #00b6d1;
+    padding: 14px 16px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    margin: 12px 0;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease, background 0.35s ease, filter 0.35s ease;
+    animation: buttonPulse 2.2s ease-in-out infinite;
+}
+
+.btn:hover {
+    transform: translateY(-6px) scale(1.04) rotateX(4deg);
+    box-shadow: 0 16px 30px rgba(0, 182, 209, 0.4);
+    background: #0099b4;
+    filter: brightness(1.08);
+}
+
+.green {
+    background-color: #5cb85c;
+}
+
+.flex {
+    display: flex;
+}
+
+.small {
+    font-size: 12px;
+}
+
+.second {
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+    animation: fadeInUp 1.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+    transition: transform 0.5s ease;
+}
+
+.second:hover {
+    transform: translateY(-2px);
+}
+.item {
+    padding: 23px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    animation: cardRise 0.8s ease-out both;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+}
+
+.item:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(20, 27, 52, 0.12);
+    background: #ffffff;
+}
+.item:nth-child(odd) {
+    animation-delay: 0.1s;
+}
+
+.item:nth-child(even) {
+    animation-delay: 0.2s;
+}
+
+.item-lang {
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 36px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px
+}
+
+.download :nth-child(2) {
+    font-size: 23px;
+}
+
+.download img {
+    padding: 0px 12px;
+}
+
+.download {
+    display: flex;
+    font-family: sans-serif;
+    gap: 10px;
+    align-items: center;
+}
+
+.site-footer {
+    margin-top: 60px;
+    background: #101828;
+    color: #f5f7fb;
+    padding: 30px 20px 20px;
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-brand {
+    flex: 1.2;
+}
+
+.footer-brand h3 {
+    margin: 0 0 8px;
+    font-size: 2rem;
+}
+
+.footer-brand p {
+    margin: 0;
+    color: #d0d7e5;
+    line-height: 1.6;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #e2e8f0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #5ed6ff;
+}
+
+.footer-btn,
+.theme-toggle {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-btn {
+    background: linear-gradient(135deg, #00b6d1, #0288d1);
+    color: #fff;
+}
+
+.theme-toggle {
+    background: #f3f4f6;
+    color: #111827;
+}
+
+.footer-btn:hover,
+.theme-toggle:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.footer-bottom {
+    max-width: 1100px;
+    margin: 22px auto 0;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    color: #d0d7e5;
+}
+
+body.dark-mode {
+    background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+    color: #f3f4f6;
+}
+
+body.dark-mode .status-box {
+    background: #1f2937;
+    color: #e5e7eb;
+}
+
+body.dark-mode .item {
+    background: #1f2937;
+    color: #f9fafb;
+}
+
+body.dark-mode .first p,
+body.dark-mode .download,
+body.dark-mode .item-lang,
+body.dark-mode .small,
+body.dark-mode .right ul li span {
+    color: #f3f4f6;
+}
+
+body.dark-mode .site-footer {
+    background: #020817;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes logoFloat {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+@keyframes textPop {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    70% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes rotateIcon {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes buttonPulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+}
+
+@keyframes cardRise {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.97);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes bodyGlow {
+    from {
+        background: linear-gradient(180deg, #ffffff 0%, #f6f7fb 100%);
+    }
+    to {
+        background: linear-gradient(180deg, #eefcff 0%, #f8f8ff 100%);
+    }
+}
+
+@media screen and (max-width: 1145px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .first p {
+        width: 80vw;
+    }
+
+    .download {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .right ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        padding: 0;
+    }
+
+    .first {
+        margin: 40px 20px;
+    }
+
+    .first span {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .first p {
+        font-size: 18px;
+    }
+
+    .btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer-content,
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
