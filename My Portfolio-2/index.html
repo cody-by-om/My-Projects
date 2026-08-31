@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>My Portfolio</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <h1>Build Better Websites</h1>
+
+        <p>
+            I create beautiful, responsive and professional websites
+            using modern web technologies.
+        </p>
+
+        <a href="#projects" class="hero-button">
+            Explore My Work
+        </a>
+
+    </section>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+
+        <p>
+            I am a web developer who enjoys creating clean, responsive
+            and user-friendly websites. I am continuously learning new
+            technologies to improve my development skills.
+        </p>
+
+        <img src="about-img.jpeg" alt="About me">
+
+    </section>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skill-container">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Git</span>
+        </div>
+
+    </section>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+
+        <div class="section-heading">
+
+            <h2>My Projects</h2>
+
+            <p>
+                Here are some of the projects I have created using
+                HTML, CSS, JavaScript and modern web technologies.
+            </p>
+
+        </div>
+        <div class="project-container">
+
+            <!-- Project 1 -->
+            <div class="project-card" tabindex="0">
+
+                <img src="data:image/jpeg;base64,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"
+                    alt="Portfolio website project">
+
+                <div class="project-overlay">
+
+                    <h3>Portfolio Website</h3>
+
+                    <p>
+                        A clean and responsive personal portfolio website
+                        created using HTML and CSS.
+                    </p>
+
+                    <div class="project-buttons">
+                        <a href="#" class="live-button">
+                            Live Demo
+                        </a>
+
+                        <a href="#" class="source-button">
+                            Source Code
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card" tabindex="0">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD41CBCsrS6FlZS6MW0Bn1ePrsfEbkeCMF_qSDGNmaGA&s=10"
+                    alt="Travel website project">
+
+                <div class="project-overlay">
+
+                    <h3>Travel Website</h3>
+
+                    <p>
+                        A modern travel landing page with responsive
+                        sections and an attractive user interface.
+                    </p>
+
+                    <div class="project-buttons">
+                        <a href="#" class="live-button">
+                            Live Demo
+                        </a>
+
+                        <a href="#" class="source-button">
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card" tabindex="0">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTE1-5nLuMwk7TtYmZK9348VOnrmttT9yUwFb-d7kHFg&s=10"
+                    alt="Business website project">
+
+                <div class="project-overlay">
+
+                    <h3>Business Website</h3>
+
+                    <p>
+                        A professional business website designed to
+                        showcase services and generate new leads.
+                    </p>
+
+                    <div class="project-buttons">
+                        <a href="#" class="live-button">
+                            Live Demo
+                        </a>
+
+                        <a href="#" class="source-button">
+                            Source Code
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+
+        <div class="section-heading">
+
+            <h2>My Experience</h2>
+
+            <p>
+                A quick look at my professional journey, internships
+                and the experience I gained while building real projects.
+            </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+            <!-- Experience 1 -->
+            <div class="timeline-card">
+
+                <span class="duration">
+                    2025 - Present
+                </span>
+
+                <h3>Web Developer</h3>
+
+                <h4>Creative Web Agency</h4>
+
+                <p>
+                    Building responsive business websites, landing pages
+                    and portfolio websites for different clients.
+                </p>
+
+            </div>
+
+
+            <!-- Experience 2 -->
+            <div class="timeline-card">
+
+                <span class="duration">
+                    2024 - 2025
+                </span>
+
+                <h3>Frontend Developer Intern</h3>
+
+                <h4>Tech Solutions</h4>
+
+                <p>
+                    Worked on responsive user interfaces using HTML,
+                    CSS, JavaScript and React.
+                </p>
+
+            </div>
+
+
+            <!-- Experience 3 -->
+            <div class="timeline-card">
+
+                <span class="duration">
+                    2023 - 2024
+                </span>
+
+                <h3>Web Development Learner</h3>
+
+                <h4>Self Learning</h4>
+
+                <p>
+                    Learned modern web development by creating personal
+                    projects and practising coding regularly.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+
+        <div class="section-heading">
+
+            <h2>Contact Me</h2>
+
+            <p>
+                Have a project idea or want to work together?
+                Send me a message and I will get back to you.
+            </p>
+
+        </div>
+
+
+        <form class="contact-form">
+
+            <div class="form-group">
+
+                <label for="name">
+                    Name
+                </label>
+
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="subject">
+                    Subject
+                </label>
+
+                <input type="text" id="subject" name="subject" placeholder="Enter message subject" required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea id="message" name="message" rows="6" placeholder="Write your message" required></textarea>
+
+            </div>
+
+
+            <button type="submit" class="contact-button">
+                Send Message
+            </button>
+
+        </form>
+
+
+        <div class="contact-info">
+
+            <p>
+                Email:
+                <a href="mailto:hello@example.com">
+                    hello@example.com
+                </a>
+            </p>
+
+            <p>
+                Phone:
+                <a href="tel:+911234567890">
+                    +91 12345 67890
+                </a>
+            </p>
+
+
+            <div class="social-links">
+
+                <a href="#" target="_blank">
+                    Instagram
+                </a>
+
+                <a href="#" target="_blank">
+                    LinkedIn
+                </a>
+
+                <a href="#" target="_blank">
+                    GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column footer-brand">
+                <h2>My Portfolio</h2>
+                <p> Designing with purpose, coding with absolute precision.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <div class="footer-link">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#contact">Contact</a>
+
+                </div>
+            </div>
+            <!-- =========================
+     Footer
+========================= -->
+
+            <footer class="footer">
+
+                <div class="footer-container">
+
+                    <!-- Brand -->
+                    <div class="footer-column footer-brand">
+
+                        <h2>My Portfolio</h2>
+
+                        <p>
+                            Designing with purpose, coding with absolute precision.
+                        </p>
+
+                        <a href="#home" class="footer-back-top">
+                            Back to Top ↑
+                        </a>
+
+                    </div>
+
+
+                    <!-- Quick Links -->
+                    <div class="footer-column">
+
+                        <h3>Quick Links</h3>
+
+                        <div class="footer-links">
+
+                            <a href="#home">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#skills">Skills</a>
+                            <a href="#projects">Projects</a>
+                            <a href="#experience">Experience</a>
+                            <a href="#contact">Contact</a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Connect -->
+                    <div class="footer-column">
+
+                        <h3>Connect With Me</h3>
+
+                        <div class="footer-social-links">
+
+                            <a href="https://github.com/" target="_blank">
+                                <span class="social-icon">G</span>
+                                GitHub
+                            </a>
+
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <span class="social-icon">in</span>
+                                LinkedIn
+                            </a>
+
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <span class="social-icon">I</span>
+                                Instagram
+                            </a>
+
+                            <a href="mailto:hello@example.com">
+                                <span class="social-icon">@</span>
+                                Email
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Footer Bottom -->
+
+                <div class="footer-bottom">
+
+                    <p>
+                        © 2026 My Portfolio. All Rights Reserved.
+                    </p>
+
+                    <p>
+                        Made with  &amp; Code
+                    </p>
+
+                </div>
+
+            </footer>
+</body>
+
+</html>
