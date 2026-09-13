@@ -1,21 +1,25 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body */
 body {
     font-family: Arial, sans-serif;
     background: #ffffff;
     color: #111111;
 }
 
+/* Header */
 .header {
     width: 100%;
     padding: 20px 6%;
     border-bottom: 1px solid #eeeeee;
 }
 
+/* Navbar */
 .navbar {
     max-width: 1200px;
     margin: auto;
@@ -24,31 +28,65 @@ body {
     justify-content: space-between;
 }
 
+/* Navigation Links */
 .nav-links {
     display: flex;
     gap: 32px;
     list-style: none;
 }
 
+/* Navigation Link */
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: #111111;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
 
+/* Animated Underline */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #2563eb;
+    transition: width 0.3s ease;
+}
+
+/* Link Hover */
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Navbar Button */
 .btn {
     margin: 0;
     padding: 11px 20px;
     border: none;
     border-radius: 7px;
-    background: #111111;   
+    background: #111111;
     color: #ffffff;
-    font-weight: 600;
     font-size: 14px;
+    font-weight: 600;
     cursor: pointer;
     transition: 0.3s ease;
 }
 
+/* Button Hover */
 .btn:hover {
     background: #333333;
     transform: translateY(-2px);
 }
 
+/* Button Active */
 .btn:active {
     transform: scale(0.96);
 }
