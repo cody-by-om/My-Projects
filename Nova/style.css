@@ -1,4 +1,5 @@
 /* Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@
 }
 
 /* Body */
+
 body {
     font-family: Arial, sans-serif;
     background: #ffffff;
@@ -13,6 +15,7 @@ body {
 }
 
 /* Header */
+
 .header {
     width: 100%;
     padding: 20px 6%;
@@ -20,6 +23,7 @@ body {
 }
 
 /* Navbar */
+
 .navbar {
     max-width: 1200px;
     margin: auto;
@@ -29,6 +33,7 @@ body {
 }
 
 /* Navigation Links */
+
 .nav-links {
     display: flex;
     gap: 32px;
@@ -36,6 +41,7 @@ body {
 }
 
 /* Navigation Link */
+
 .nav-links a {
     position: relative;
     text-decoration: none;
@@ -46,6 +52,7 @@ body {
 }
 
 /* Animated Underline */
+
 .nav-links a::after {
     content: "";
     position: absolute;
@@ -58,6 +65,7 @@ body {
 }
 
 /* Link Hover */
+
 .nav-links a:hover {
     color: #2563eb;
 }
@@ -67,6 +75,7 @@ body {
 }
 
 /* Navbar Button */
+
 .btn {
     margin: 0;
     padding: 11px 20px;
@@ -81,12 +90,14 @@ body {
 }
 
 /* Button Hover */
+
 .btn:hover {
     background: #333333;
     transform: translateY(-2px);
 }
 
 /* Button Active */
+
 .btn:active {
     transform: scale(0.96);
 }
