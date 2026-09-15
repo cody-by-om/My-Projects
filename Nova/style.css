@@ -101,3 +101,102 @@ body {
 .btn:active {
     transform: scale(0.96);
 }
+
+/* Hero Section */
+
+.hero {
+    max-width: 1200px;
+    min-height: 620px;
+    margin: auto;
+    padding: 100px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* Hero Content */
+
+.hero-content {
+    max-width: 620px;
+}
+
+/* Hero Badge */
+
+.hero-badge {
+    display: inline-block;
+    margin-bottom: 24px;
+    padding: 8px 14px;
+    border: 1px solid #eaeaea;
+    border-radius: 50px;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Hero Heading */
+
+.hero-content h1 {
+    margin-bottom: 24px;
+    color: #111111;
+    font-size: 64px;
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+.hero-content h1 span {
+    color: #2563eb;
+}
+
+/* Hero Description */
+
+.hero-content p {
+    max-width: 540px;
+    margin-bottom: 32px;
+    color: #666666;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Hero Buttons */
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+}
+
+/* Hero Button */
+
+.hero-btn {
+    padding: 13px 22px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+/* Primary Button */
+
+.primary-btn {
+    background: #111111;
+    color: #ffffff;
+}
+
+.primary-btn:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+}
+
+/* Secondary Button */
+
+.secondary-btn {
+    border: 1px solid #dddddd;
+    color: #111111;
+}
+
+.secondary-btn:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+    transform: translateY(-2px);
+}
