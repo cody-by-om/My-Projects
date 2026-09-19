@@ -144,6 +144,8 @@ body {
     letter-spacing: -2px;
 }
 
+/* Hero Heading Highlight */
+
 .hero-content h1 span {
     color: #2563eb;
 }
@@ -183,6 +185,8 @@ body {
     color: #ffffff;
 }
 
+/* Primary Button Hover */
+
 .primary-btn:hover {
     background: #2563eb;
     transform: translateY(-2px);
@@ -195,13 +199,13 @@ body {
     color: #111111;
 }
 
+/* Secondary Button Hover */
+
 .secondary-btn:hover {
     border-color: #2563eb;
     color: #2563eb;
     transform: translateY(-2px);
 }
-
-
 
 /* Hero Visual */
 
@@ -222,13 +226,10 @@ body {
     border: 1px solid #eaeaea;
     border-radius: 24px;
     background: #f7f8fa;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    box-shadow:
-        0 20px 60px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
 }
 
 /* Visual Top */
@@ -236,7 +237,6 @@ body {
 .visual-top {
     display: flex;
     justify-content: space-between;
-
     color: #666666;
     font-size: 12px;
     font-weight: 600;
@@ -248,20 +248,15 @@ body {
     width: 210px;
     height: 210px;
     margin: auto;
-
     border-radius: 50%;
     background: #111111;
     color: #ffffff;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-size: 28px;
     font-weight: 700;
-
-    box-shadow:
-        0 20px 50px rgba(37, 99, 235, 0.18);
+    box-shadow: 0 20px 50px rgba(37, 99, 235, 0.18);
 }
 
 /* Visual Bottom */
@@ -270,12 +265,197 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-
     color: #666666;
     font-size: 14px;
 }
 
+/* Visual Bottom Strong */
+
 .visual-bottom strong {
     color: #111111;
     font-size: 18px;
+}
+
+/* About Section */
+
+.about {
+    padding: 120px 6%;
+    background: #ffffff;
+}
+
+/* About Container */
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* About Header */
+
+.about-header {
+    max-width: 800px;
+    margin-bottom: 70px;
+}
+
+/* About Label */
+
+.about-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+/* About Heading */
+
+.about-header h2 {
+    color: #111111;
+    font-size: 58px;
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+/* About Heading Highlight */
+
+.about-header h2 span {
+    color: #2563eb;
+}
+
+/* About Main */
+
+.about-main {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 80px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* About Intro */
+
+.about-intro {
+    max-width: 420px;
+}
+
+/* About Intro Text */
+
+.about-intro p {
+    margin-bottom: 30px;
+    color: #666666;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* About Link */
+
+.about-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #111111;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+/* About Link Hover */
+
+.about-link:hover {
+    color: #2563eb;
+}
+
+/* About Features */
+
+.about-features {
+    display: flex;
+    flex-direction: column;
+}
+
+/* About Feature */
+
+.about-feature {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    gap: 20px;
+    padding: 25px 0;
+    border-bottom: 1px solid #eaeaea;
+    transition: 0.3s ease;
+}
+
+/* First Feature */
+
+.about-feature:first-child {
+    padding-top: 0;
+}
+
+/* Last Feature */
+
+.about-feature:last-child {
+    border-bottom: none;
+}
+
+/* Feature Number */
+
+.feature-number {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* Feature Heading */
+
+.about-feature h3 {
+    margin-bottom: 8px;
+    color: #111111;
+    font-size: 21px;
+}
+
+/* Feature Text */
+
+.about-feature p {
+    max-width: 430px;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Feature Hover */
+
+.about-feature:hover {
+    transform: translateX(6px);
+}
+
+/* About Stats */
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding-top: 55px;
+}
+
+/* About Stat */
+
+.about-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Stat Number */
+
+.about-stat strong {
+    color: #111111;
+    font-size: 34px;
+    letter-spacing: -1px;
+}
+
+/* Stat Text */
+
+.about-stat span {
+    color: #777777;
+    font-size: 13px;
 }
