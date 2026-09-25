@@ -459,3 +459,57 @@ body {
     color: #777777;
     font-size: 13px;
 }
+
+
+
+
+/* Services Section */
+
+.services {
+    padding: 140px 6%;
+    background: #f7f8fa;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* Services Header */
+
+.services-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: 70px;
+}
+
+.services-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.services-header h2 {
+    max-width: 700px;
+    color: #111111;
+    font-size: 58px;
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+.services-header h2 span {
+    color: #2563eb;
+}
+
+.services-intro {
+    max-width: 360px;
+    color: #666666;
+    font-size: 15px;
+    line-height: 1.7;
+}
