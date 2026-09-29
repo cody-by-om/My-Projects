@@ -664,3 +664,138 @@ body {
     font-weight: 600;
     letter-spacing: 1px;
     }
+
+
+
+
+
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.service-card {
+    min-height: 300px;
+    padding: 28px;
+    border: 1px solid #e5e5e5;
+    border-radius: 18px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.25s ease;
+}
+
+.service-card:hover {
+    border-color: #2563eb;
+    transform: translateY(-6px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.07);
+}
+
+
+.service-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.service-arrow {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #eaeaea;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111111;
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+
+
+.service-card:hover .service-arrow {
+    border-color: #2563eb;
+    background: #2563eb;
+    color: #ffffff;
+    transform: rotate(45deg);
+}
+
+.service-card-content {
+    padding: 45px 0 30px;
+}
+
+.service-card-content h3 {
+    margin-bottom: 12px;
+    color: #111111;
+    font-size: 23px;
+    letter-spacing: -0.5px;
+}
+
+.service-card-content p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+.service-card-line {
+    width: 100%;
+    height: 1px;
+    background: #eaeaea;
+    transition: 0.35s ease;
+}
+
+
+.service-card:hover .service-card-line {
+    width: 35%;
+    background: #2563eb;
+}
+
+
+.services-bottom {
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services-bottom>span {
+    color: #777777;
+    font-size: 13px;
+}
+
+
+.services-bottom-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #111111;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+
+.services-bottom-link:hover {
+    color: #2563eb;
+}
+
+
+.services-bottom-link span {
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+
+.services-bottom-link:hover span {
+    transform: translateX(5px);
+}
