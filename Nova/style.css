@@ -799,3 +799,99 @@ body {
 .services-bottom-link:hover span {
     transform: translateX(5px);
 }
+
+
+
+
+
+
+/* CTA Section */
+
+.cta {
+    padding: 140px 6%;
+    background: #111111;
+    color: #ffffff;
+}
+
+.cta-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* CTA Label */
+
+.cta-label {
+    display: inline-block;
+    margin-bottom: 22px;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+
+/* CTA Heading */
+
+.cta-container h2 {
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-size: 64px;
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+.cta-container h2 span {
+    color: #2563eb;
+}
+
+
+/* CTA Description */
+
+.cta-container p {
+    max-width: 560px;
+    margin: 0 auto 35px;
+    color: #aaaaaa;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* CTA Button */
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #111111;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+
+/* CTA Button Hover */
+
+.cta-btn:hover {
+    background: #2563eb;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+
+/* CTA Button Arrow */
+
+.cta-btn span {
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+
+.cta-btn:hover span {
+    transform: translateX(5px);
+}
