@@ -895,3 +895,131 @@ body {
 .cta-btn:hover span {
     transform: translateX(5px);
 }
+
+
+
+/* Contact Section */
+
+.contact {
+    padding: 90px 0;
+    background: #f3f1ec;
+    color: #171717;
+}
+
+.contact-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-bottom: 50px;
+}
+
+.contact-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #8a6a45;
+}
+
+.contact-header h2 {
+    margin: 15px 0 0;
+    font-size: 56px;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.contact-header h2 span {
+    display: block;
+    color: #77736d;
+}
+
+.contact-intro {
+    max-width: 240px;
+    color: #6f6c66;
+    line-height: 1.6;
+}
+
+.contact-main {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 80px;
+}
+
+.contact-info,
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-item,
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.contact-item-label {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #99938a;
+}
+
+.contact-item a,
+.contact-item p {
+    margin: 0;
+    color: #222;
+    text-decoration: none;
+}
+
+.form-group label {
+    font-size: 12px;
+    color: #6f6c66;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 11px 0;
+    border: 0;
+    border-bottom: 1px solid #cbc7c0;
+    outline: 0;
+    background: transparent;
+    color: #171717;
+    font: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #8a6a45;
+}
+
+.contact-btn {
+    width: fit-content;
+    padding: 13px 20px;
+    border: 1px solid #171717;
+    border-radius: 7px;
+    background: #171717;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.contact-btn:hover {
+    background: #8a6a45;
+    border-color: #8a6a45;
+    transform: translateY(-2px);
+}
+
+.contact-btn span {
+    margin-left: 15px;
+    transition: .3s;
+}
+
+.contact-btn:hover span {
+    margin-left: 20px;
+}
