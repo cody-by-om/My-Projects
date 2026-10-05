@@ -1136,3 +1136,209 @@ body {
     color: #777;
     font-size: 12px;
 }
+
+
+
+/* Tablet and smaller screens */
+@media(max-width:900px) {
+    .hero {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-visual {
+        width: 100%;
+        max-width: 430px;
+        margin: auto;
+    }
+
+    .about-main,
+    .contact-main {
+        grid-template-columns: 1fr;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-header,
+    .contact-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .featured-service {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile screens */
+@media (max-width:600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .header {
+        padding: 18px 5%;
+    }
+
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 18px;
+    }
+
+    .nav-links {
+        grid-column: 1 / -1;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .btn {
+        padding: 10px 16px;
+    }
+
+    .hero {
+        width: 90%;
+        min-height: auto;
+        padding: 65px 0;
+        gap: 45px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(38px, 10vw, 48px);
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-visual {
+        width: 100%;
+        height: 390px;
+    }
+
+    .visual-card {
+        padding: 22px;
+    }
+
+    .visual-circle {
+        width: 180px;
+        height: 180px;
+    }
+
+    .about {
+        padding: 80px 6%;
+    }
+
+    .about-header h2,
+    .services-header h2,
+    .contact-header h2,
+    .cta-container h2 {
+        font-size: clamp(36px, 9vw, 44px);
+    }
+
+    .about-main {
+        gap: 45px;
+    }
+
+    .about-stats {
+        gap: 30px 20px;
+    }
+
+    .services {
+        padding: 90px 6%;
+    }
+
+    .services-header {
+        gap: 25px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-service-content,
+    .featured-service-visual {
+        min-height: 320px;
+    }
+
+    .featured-service-content {
+        padding: 30px;
+    }
+
+    .featured-service-content h3 {
+        font-size: 30px;
+    }
+
+    .visual-word {
+        font-size: clamp(32px, 10vw, 42px);
+    }
+
+    .cta {
+        padding: 90px 6%;
+    }
+
+    .contact {
+        padding: 80px 0;
+    }
+
+    .contact-header {
+        gap: 25px;
+    }
+
+    .contact-main {
+        gap: 45px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact-btn {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 65px 0 25px;
+    }
+
+    .footer-main {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-links,
+    .footer-socials {
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+    }
+        }
